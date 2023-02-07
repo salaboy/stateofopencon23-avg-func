@@ -1,0 +1,30 @@
+specVersion: 0.34.0
+name: add
+runtime: go
+registry: ""
+image: ""
+imageDigest: ""
+created: 2023-02-07T10:21:21.355332Z
+invocation:
+  format: http
+build:
+  buildpacks:
+  - paketo-buildpacks/go-dist
+  - ghcr.io/boson-project/go-function-buildpack:tip
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  annotations:
+    dapr.io/app-id: add
+    dapr.io/app-port: "8080"
+    dapr.io/enabled: "true"
+    dapr.io/metrics-port: "9099"
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
