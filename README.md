@@ -8,7 +8,7 @@ Steps:
 - `gcloud connect`
 - `dapr components -k`
 - `func create -l go -t dapr -r https://github.com/salaboy/func`
-- Change `statestore` to `statestore-redis` in handle.go
+- Change `statestore` to `statestore` in handle.go
 - Add annotations
 ```
   annotations:
