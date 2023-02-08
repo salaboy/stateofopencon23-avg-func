@@ -1,4 +1,4 @@
-# State of Open Con :: 2023 Average Function
+# State of Open Con :: 2023 Functions
 
 Function using Dapr
 
